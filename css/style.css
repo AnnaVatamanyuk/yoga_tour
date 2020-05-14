@@ -1,0 +1,1965 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*fonts*/
+
+@font-face {
+    font-family: 'muller-regular';
+    src: url("../fonts/Muller-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'muller-bold';
+    src: url("../fonts/Muller-Bold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'muller-medium';
+    src: url("../fonts/MullerMedium.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'muller-light';
+    src: url("../fonts/MullerLight.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: 'muller-regular', sans-serif;
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'muller-medium', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 15px;
+}
+
+.d-f{
+    display: flex;
+}
+
+.jc-c{
+    justify-content: center;
+}
+
+.jc-sb{
+    justify-content: space-between;
+}
+
+.jc-sa{
+    justify-content: space-around;
+}
+
+.ai-fe{
+    align-items: flex-end;
+}
+
+.fd-c{
+    flex-direction: column;
+}
+
+.ai-c{
+    align-items: center;
+}
+
+.as-c{
+    align-self: center;
+}
+
+.fw-w{
+    flex-wrap: wrap;
+}
+
+.ac-c{
+    align-content: center;
+}
+
+.row {
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    padding: 0 15px;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-padding{
+    padding: 0 30px;
+}
+
+/*HEADER*/
+
+.header{
+    background-image: url("../images/bg-header.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*height: 100vh;*/
+    color: #fff;
+}
+
+.logo-header{
+    padding: 20px 0;
+}
+
+.phone-header span{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.phone-header a{
+    font-size: 20px;
+    font-family: 'muller-bold',sans-serif;
+}
+
+.container-header{
+    padding: 150px 0 0;
+}
+
+.container-header h1{
+    text-align: center;
+    margin: 0 0 45px;
+    font-family: 'muller-medium', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.nav ul{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+.nav ul li{
+    display: inline-block;
+}
+
+.nav ul li + li:before{
+    content: '/';
+    padding: 0 7px;
+}
+
+.nav span{
+    display: block;
+    margin: 0 0 100px;
+}
+
+.btn-header{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'muller-bold',sans-serif;
+    padding: 22px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    height: 60px;
+    width: 300px;
+    margin: 0 0 140px;
+}
+
+.social-header{
+    margin-bottom: 35px;
+}
+
+.social-header ul li{
+    margin-right: 10px;
+}
+
+.social-header ul li:last-child{
+    margin-right: 0;
+}
+
+.social-header ul li a i{
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.social-header ul li a i:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.social-header ul li a .fa-facebook-f{
+    padding: 5px 8px;
+}
+
+/*yoga-tour_section*/
+
+.yoga-tour_section{
+    padding: 50px 0;
+    background-color: #f8f2e4;
+}
+
+.yoga-tour_section h2{
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 56px;
+    margin-bottom: 45px;
+}
+
+.yoga-tour_section h2 span{
+    display: block;
+    font-size: 30px;
+    text-transform: none;
+}
+
+.text-content{
+    font-family: 'muller-light',sans-serif;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.tour-consists_of li{
+    margin-bottom: 25px;
+    font-family: 'muller-light', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-left: 50px;
+    position: relative;
+}
+
+.tour-consists_of li:before{
+    position: absolute;
+    left: 5px;
+}
+
+.tour-consists_of .yoga:before{
+     content: url("../images/Yoga_Mat.svg");
+ }
+
+.tour-consists_of .sea:before{
+    content: url("../images/sea.svg");
+    bottom: -2px;
+}
+
+.tour-consists_of .travel:before{
+    content: url("../images/paper-plane-1.svg");
+    bottom: -6px;
+}
+
+/*reasons-section*/
+
+.reasons-section{
+    padding: 80px 0 75px;
+}
+
+.reason-line{
+    margin-bottom: 25px;
+}
+
+.angles{
+    display:flex;
+    align-items:center;
+    list-style:none;
+    padding:0 0 0 10px;
+}
+.angles li{
+    width:10px;
+    height:10px;
+    border:1px solid #c45f1c;;
+    border-left:none;
+    border-bottom:none;
+    transform:rotate(-37deg) skewX(14deg);
+    transform-origin:center;
+    margin-right:5px;
+}
+
+.angles li:last-child{
+    border-right: none;
+}
+
+.img-reason{
+    padding: 45px 0 20px;
+}
+
+.text-reason{
+    text-align: center;
+    width: 240px;
+}
+
+/*travel-plan_section*/
+
+.travel-plan_section{
+    padding: 80px 0 0;
+    background: linear-gradient(180deg, #f8f2e4 487px, transparent 50%);
+}
+
+.slide{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 50px;
+    width: 850px;
+    height: 530px;
+}
+
+.slide-bg{
+    position: absolute;
+    background-color: #444444;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-1{
+    background-image: url("../images/travel-plan-1.png");
+}
+
+.slide-2{
+    background-image: url("../images/travel-plan-2.png");
+}
+
+.slide-3{
+    background-image: url("../images/travel-plan-3.png");
+}
+
+.slide-2, .slide-1, .slide-3,
+.slide-day_1, .slide-day_2, .slide-day_3{
+    position: relative;
+}
+
+.slide-text{
+    height: calc(100% - 60px);
+    width: calc(100% - 60px);
+    color: #fff;
+    position: absolute;
+    top:30px;
+    left: 30px;
+    z-index: 1;
+    border: 2px solid #fff;
+}
+
+.slide-text h3{
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: 'muller-medium',sans-serif;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.slide-text p{
+    text-align: center;
+    width: 464px;
+    height: 61px;
+    font-size: 18px;
+}
+
+.slide-day_1{
+    background-image: url("../images/day2.png");
+}
+
+.slide-day_2{
+    background-image: url("../images/day3.png");
+}
+
+.slide-day_3{
+    background-image: url("../images/day1.png");
+}
+
+/*tour-schedule_section*/
+
+.tour-schedule_section{
+    padding: 80px 0 60px;
+}
+
+.tour-schedule_section .reason-line{
+    margin-bottom: 70px;
+}
+
+.tour-schedule_section .col-4{
+    background-color: #fff8e6 ;
+    padding: 20px;
+    margin: 10px;
+}
+
+.tour-schedule_section p{
+    font: 14px 'muller-light', sans-serif;
+    color: #4b4b4b;
+    margin-bottom: 13px;
+}
+
+.tour-schedule_section h3{
+    font: 18px 'muller-medium', sans-serif;
+    margin-bottom: 20px;
+}
+
+.tour-schedule_section a{
+    color: #5a5baf;
+    font-size: 12px;
+    text-decoration-line: underline;
+    margin-bottom: 18px;
+}
+
+.tour-schedule_section button{
+    width: 180px;
+    height: 40px;
+    border: 2px solid #e28234;
+    background-color: transparent;
+    color: #e28234;
+    text-transform: uppercase;
+    font: 12px 'muller-bold', sans-serif;
+}
+
+.tour-schedule_section button:hover{
+    background-color: #e28234;
+    color: #fff;
+}
+
+/*ayurveda*/
+
+.ayurveda{
+    padding: 80px 0;
+}
+
+.ayurveda .reason-line{
+    margin-bottom: 70px;
+}
+
+.ayurveda-text{
+    font: 18px 'muller-light',sans-serif;
+    margin-bottom: 60px;
+}
+
+.ayurveda-text p{
+    text-align: center;
+    text-indent: 2.5em;
+}
+
+.ayurveda-text p:first-child{
+    margin-bottom: 30px;
+}
+
+.ayurveda h3{
+    text-align: center;
+    font: 24px 'muller-medium',sans-serif;
+    margin-bottom: 60px;
+}
+
+.ayurveda-program{
+    margin-bottom: 30px;
+}
+
+.ayurveda-program p{
+    font: 18px 'muller-light',sans-serif;
+    width: 505px;
+    padding-left: 40px;
+}
+
+.ayurveda-center{
+    position: relative;
+    padding-top: 55px;
+}
+
+.ayurveda-center_bg{
+    background-color: #f8f2e4;
+    width: 725px;
+    height: 264px;
+    position: absolute;
+    left: -15px;
+    top: 23px;
+    z-index: -1;
+}
+
+.ayurveda-center_photo img{
+    padding: 7px;
+    width: 150px;
+}
+
+.ayurveda-center_text {
+    padding-top: 25px;
+}
+
+.ayurveda-center_text h3{
+    text-align: left;
+    font: 30px 'muller-mediuml',sans-serif;
+    margin-bottom: 10px;
+}
+
+.ayurveda-center_text span{
+    font: 14px 'muller-light',sans-serif;
+    color:#4b4b4b;
+    margin-bottom: 35px;
+    display: block;
+}
+
+.ayurveda-center_text p{
+    font: 12px 'muller-light', sans-serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 15px;
+}
+
+.ayurveda-center_list{
+    padding: 10px 20px 0;
+    font: 12px 'muller-light', sans-serif; ;
+}
+
+.ayurveda-center_list .col-2:first-child{
+    padding-right: 30px;
+}
+
+.ayurveda-center_list ul{
+    list-style-image: url("../images/logo_icon.svg");
+}
+
+.ayurveda-center_list ul li{
+    margin-bottom: 15px;
+}
+
+/*instructors_section*/
+
+.instructors-section{
+    padding:80px 0;
+    background: linear-gradient(180deg, #f8f2e4 1140px, transparent 50%);
+}
+
+.single-item .slide{
+    position: relative;
+}
+
+.single-item .slick-dots{
+    bottom: 4px;
+    text-align: end;
+    right: 65px;
+}
+
+.single-item .slick-dots li{
+    width: 5px;
+}
+
+.single-item .slick-dots li :before{
+    font-size: 8px;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.single-item .slick-dots .slick-active :before{
+    background-color: white;
+}
+
+.single-item .slide .instructor-bg{
+    position: absolute;
+    background-color: #444;
+    opacity: .5;
+    width: 100%;
+    height: 170px;
+    bottom: 0;
+}
+
+.single-item .row{
+    position: absolute;
+    z-index: 5;
+    bottom: 47px;
+    left: 45px;
+    color: #fff;
+}
+
+.instructor-info{
+    padding-right: 45px;
+    border-right: 2px solid #fff;
+}
+
+.instructor-info h3{
+    font: 30px 'muller-bold',sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.instructor-info span{
+    display: block;
+    font-style: italic;
+}
+
+.instructor-skills{
+    width: 453px;
+    font-size: 14px;
+    padding-left: 45px;
+}
+
+.instructor_1{
+    background-image: url("../images/instructor1.png");
+}
+
+.instructor_2{
+    background-image: url("../images/instructor1.png");
+}
+
+.instructor_3{
+    background-image: url("../images/instructor1.png");
+}
+
+.instructor_4{
+    background-image: url("../images/instructor1.png");
+}
+
+.instructor_5{
+    background-image: url("../images/instructor1.png");
+}
+
+.instructor_slider2{
+    background-image: url("../images/instructor2.png");
+}
+
+/*reviews*/
+
+.reviews{
+    padding: 0 0 80px;
+}
+
+.reviews .slide .row{
+    flex-wrap: nowrap;
+    padding-bottom: 47px;
+}
+
+.reviews .reason-line{
+    margin-bottom: 75px;
+}
+
+.reviews .slide .row .col{
+    padding: 0 43px;
+}
+
+.reviews .slide{
+    height: 100%;
+}
+
+.reviews h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.reviews h3 span{
+    font-family: 'muller-bold',sans-serif;
+    font-weight: 500;
+}
+
+.reviews a{
+    font: 12px 'muller-light',sans-serif;
+    text-decoration: underline;
+    color: #c94410;
+    margin-bottom: 17px;
+}
+
+.reviews p{
+    font-style: italic;
+    font-size: 14px;
+    color: #393939;
+}
+
+.reviews .one-time .slick-prev,
+.reviews .one-time .slick-next{
+    top: 15%;
+}
+
+.reviews .one-time .slick-prev:before,
+.reviews .one-time .slick-next:before{
+    font-size: 25px;
+    opacity: 1;
+    content: '\f053';
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 600;
+    color: #b8b8b8;
+}
+
+.reviews .one-time .slick-next:before{
+    content: '\f054';
+}
+
+/*.why-we_section*/
+
+.why-we_section{
+    padding: 80px 0 55px;
+    background-color: #f8f2e4;
+}
+
+.why-we_section .reason-line{
+    margin-bottom: 70px;
+}
+
+.why-we_section .icon-holder{
+    margin-bottom: 38px;
+    align-self: center;
+}
+
+.why-we_section .row .col .text-holder h3{
+    font: 18px 'muller-bold',sans-serif;
+    margin-bottom: 19px;
+}
+
+.why-we_section .row .col{
+    margin-bottom: 60px;
+}
+
+.why-we_section .text-holder{
+    width: 262px;
+    text-align: center;
+    font-family: 'muller-light', sans-serif;
+}
+
+/*.plan-job_section*/
+
+.plan-job_section{
+    padding: 80px 0;
+}
+
+.plan-job_section .reason-line{
+    margin-bottom: 37px;
+}
+
+.plan-job_section p{
+    font-size: 18px;
+    font-style: italic;
+    color: #3f3f3f;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.step-plan img{
+    margin-bottom: 20px;
+}
+
+.step-plan{
+    position: relative;
+}
+
+.step-plan:after{
+    content: '\f061';
+    font-size: 20px;
+    font-weight: 600;
+    color: #f0f0f0;
+    top: 19%;
+    right: -39px;
+    position: absolute;
+    font-family: 'Font Awesome 5 Free', sans-serif;
+}
+
+.step-plan:last-child:after{
+    content: '';
+}
+
+.step-plan:last-child{
+    margin-right: 0;
+}
+
+.step-plan p{
+    width: 100%;
+    max-width: 125px;
+    font-size: 12px;
+    color: #3f3f3f;
+    margin-bottom: 7px;
+}
+
+.step-plan a{
+    font-size: 12px;
+    color: #ea7231;
+    text-decoration: underline;
+}
+
+/*.price-section*/
+
+.price-section{
+    background-color: #f8f2e4;
+    padding: 80px 0 75px;
+}
+
+.price-section .reason-line{
+    margin-bottom: 55px;
+}
+
+.price-tour{
+    padding: 50px;
+    background-color: #fff;
+}
+
+.price-tour p{
+    font: 21px 'muller-light', sans-serif;
+    line-height: 48px;
+}
+
+.price-tour span{
+    font-family: 'muller-bold', sans-serif;
+    font-weight: 700;
+}
+
+.price-tour p:last-child{
+    color: #dd490f;
+}
+
+.price-info{
+    margin-bottom: 50px;
+}
+
+.price-sale{
+    background-color: #f4e1b6;
+    padding: 25px 50px;
+}
+
+.price-sale p{
+    font: 20px 'muller-medium', sans-serif;
+}
+
+.price-sale button{
+    background-color: transparent;
+    font: 12px 'muller-bold',sans-serif;
+    text-transform: uppercase;
+    color: #e28234;
+    border: 2px solid #e28234;
+    padding: 10px 45px;
+    font-weight: 600;
+}
+
+.price-sale button:hover{
+    background-color: #e28234;
+    color: #fff;
+}
+
+.price-detailes{
+    margin: 0 15px;
+}
+
+.price-detailes h3{
+    text-align: center;
+    font: 24px 'muller-medium';
+    margin-bottom: 40px;
+}
+
+.price-detailes ul{
+    font-size: 18px;
+    color: #4e4e4e;
+}
+
+.price-detailes ul li{
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.included-in_price{
+    list-style: url("../images/done.svg");
+}
+
+.not-included-in_price{
+    list-style: url("../images/error.svg");
+    margin-bottom: 48px;
+}
+
+.price-detailes p{
+    text-align: center;
+    font-size: 18px;
+}
+
+/*.security-guarantee_section*/
+
+.security-guarantee_section{
+    padding: 80px 0;
+}
+
+.security-guarantee_section .reason-line{
+    margin-bottom: 70px;
+}
+
+.security-guarantee_section p{
+    font-family: 'muller-light', sans-serif;
+    font-style: italic;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.security-guarantee_section h3{
+    font: 24px 'muller-medium', sans-serif;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.security-guarantee_section span{
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    max-width: 160px;
+    width: 100%;
+}
+
+.security-guarantee_section img{
+    margin-bottom: 12px;
+    padding: 0 5px;
+}
+
+/*.contact-section*/
+
+.contact-section{
+    background-color: #f8f2e4;
+    padding: 50px 0 55px;
+}
+
+.contact-section h3{
+    font: 22px 'muller-medium', sans-serif;
+    margin-bottom: 28px;
+}
+
+.contact-section h4{
+    font-family: 'muller-medium',sans-serif;
+    margin-bottom: 18px;
+}
+
+.contact-section .social-header{
+    margin-right: 135px;
+}
+
+.contact-section .social-header ul li a i{
+    color: #e28234;
+    border: 1px solid #e28234;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.contact-section .social-header ul li a .fa-facebook-f{
+    padding: 10px 13px;
+}
+
+.contact-section .social-header ul li a .fa-instagram{
+    padding: 10px 12px;
+}
+
+.contact-section .social-header ul li a i:hover{
+    background-color: #e28234;
+    color: #fff;
+}
+
+.contact-section .phone-header h4{
+    margin-bottom: 13px;
+}
+
+.contact-section .phone-header span{
+    font: 12px 'muller-light', sans-serif;
+    font-style: italic;
+    margin-bottom: 7px;
+}
+
+.contact-section .phone-header a{
+    font: 28px 'muller-bold', sans-serif;
+}
+
+.contact-section .office h4{
+    margin-bottom: 17px;
+}
+
+.maps span{
+    display: block;
+    font-size: 11px;
+}
+
+.maps .col{
+    padding: 0 5px;
+}
+
+.maps .col:first-child{
+    padding-left: 0;
+}
+
+iframe{
+    width: 200px;
+    height: 80px;
+}
+
+/*footer*/
+
+.footer{
+    padding: 12px 0;
+    background-color: #383838;
+    color: #fff;
+}
+
+.footer .logo-footer{
+    margin-right: 39px;
+}
+
+.footer .logo-footer img{
+    width: 51px;
+    height: 66px;
+}
+
+.logo-text a{
+    font: 18px 'muller-bold', sans-serif;
+}
+
+.footer .col:last-child p{
+
+    width: 395px;
+}
+
+.footer p{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 1024px){
+    .reviews .one-time .slick-prev,
+    .reviews .one-time .slick-next{
+        top: 40%;
+    }
+
+    .reviews .one-time .slick-prev{
+        left: 10px;
+    }
+
+    .reviews .one-time .slick-next{
+        right: 10px;
+    }
+}
+
+@media(max-width: 980px) {
+    .container {
+        max-width: 850px;
+    }
+
+    .phone-header a {
+        font-size: 16px;
+    }
+
+    .phone-header span {
+        font-size: 12px;
+    }
+
+    .container-header h1 {
+        margin: 0 0 30px;
+        font-size: 50px;
+    }
+
+    .nav ul {
+        font-size: 18px;
+    }
+
+    .nav span {
+        margin: 0 0 45px;
+    }
+
+    .btn-header {
+        height: 50px;
+        width: 250px;
+        padding: 0;
+        margin: 0 0 80px;
+    }
+
+    .yoga-tour_section h2 {
+        font-size: 42px;
+        line-height: 50px;
+        margin-bottom: 25px;
+    }
+
+    .text-content {
+        margin-bottom: 35px;
+        font-size: 14px;
+    }
+
+    .tour-consists_of li {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .img-reason {
+        padding: 35px 0 20px;
+    }
+
+    .travel-plan_section {
+        padding: 60px 0 0;
+    }
+
+    .slide {
+        width: 850px;
+        height: 375px;
+    }
+
+    .slide-text h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .slide-text p {
+        width: 330px;
+        font-size: 16px;
+    }
+
+    .tour-schedule_section {
+        padding: 60px 0 40px;
+    }
+
+    .tour-schedule_section .reason-line {
+        margin-bottom: 50px;
+    }
+
+    .tour-schedule_section h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .tour-schedule_section p {
+        font-size: 12px;
+    }
+
+    .tour-schedule_section a {
+        font-size: 10px;
+    }
+
+    .tour-schedule_section button {
+        width: 150px;
+        height: 35px;
+        font-size: 10px;
+    }
+
+    .ayurveda {
+        padding: 60px 0;
+    }
+
+    .ayurveda .reason-line {
+        margin-bottom: 45px;
+    }
+
+    .ayurveda-text {
+        font-size: 16px;
+    }
+
+    .ayurveda-text p:first-child {
+        margin-bottom: 25px;
+    }
+
+    .ayurveda h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .ayurveda-program p {
+        font-size: 16px;
+        width: 450px;
+    }
+
+    .ayurveda-center_bg {
+        width: 525px;
+        height: 200px;
+    }
+
+    .ayurveda-center_photo img {
+        width: 120px;
+    }
+
+    .ayurveda-center_text span {
+        margin-bottom: 30px;
+    }
+
+    .ayurveda-center_list {
+        font-size: 10px;
+    }
+
+    .instructors-section {
+        padding: 60px 0;
+    }
+
+    .instructor-skills {
+        width: 380px;
+        padding-left: 25px;
+    }
+
+    .instructor-info {
+        padding-right: 25px;
+    }
+
+    .instructor-info h3 {
+        font-size: 25px;
+    }
+
+    .reviews {
+        padding: 60px 0;
+    }
+
+    .reviews p {
+        font-size: 12px;
+    }
+
+    .reviews .slide .row .col {
+        padding: 0 30px;
+    }
+
+    .why-we_section .icon-holder {
+        margin-bottom: 20px;
+    }
+
+    .why-we_section .row .col .text-holder h3 {
+        font-size: 16px;
+    }
+
+    .plan-job_section p {
+        font-size: 16px;
+    }
+
+    .plan-job_section .reason-line {
+        margin-bottom: 22px;
+    }
+
+    .step-plan img {
+        width: 60px;
+    }
+
+    .step-plan:after {
+        top: 10%;
+        right: -17px;
+    }
+
+    .plan-job_section .step-plan p{
+        font-size: 12px;
+    }
+
+    .step-plan a {
+        font-size: 10px;
+    }
+
+    .price-section {
+        padding: 60px 0 55px;
+    }
+
+    .price-section .reason-line {
+        margin-bottom: 35px;
+    }
+
+    .price-tour {
+        padding: 35px;
+    }
+
+    .price-tour p {
+        font-size: 18px;
+        line-height: 38px;
+    }
+
+    .price-sale {
+        padding: 20px 35px;
+    }
+
+    .price-sale p {
+        font-size: 18px;
+    }
+
+    .price-detailes ul {
+        font-size: 15px;
+    }
+
+    .price-detailes ul li {
+        margin-bottom: 10px;
+    }
+
+    .price-detailes h3 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .price-detailes p {
+        font-size: 16px;
+    }
+
+    .security-guarantee_section {
+        padding: 69px 0;
+    }
+
+    .security-guarantee_section .reason-line {
+        margin-bottom: 30px;
+    }
+
+    .security-guarantee_section p {
+        margin-bottom: 50px;
+    }
+
+    .contact-section .phone-header a {
+        font-size: 23px;
+    }
+
+    .contact-section .phone-header span {
+        font-size: 10px;
+    }
+
+    .contact-section .social-header ul li a i {
+        font-size: 16px;
+    }
+
+    .footer p {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .logo-text a {
+        font-size: 16px;
+    }
+
+    .footer .col:last-child p {
+        width: 335px;
+    }
+}
+
+@media(max-width: 800px) {
+
+    .container{
+        max-width: 610px;
+    }
+
+    .container-header h1 {
+        margin: 0 0 20px;
+        font-size: 34px;
+    }
+
+    .logo-header {
+        padding: 10px 0;
+    }
+
+    .nav ul {
+        font-size: 14px;
+    }
+
+    .nav span {
+        font-size: 14px;
+        margin: 0 0 25px;
+    }
+
+    .btn-header {
+        font-size: 12px;
+        height: 35px;
+        width: 150px;
+        margin: 0 0 35px;
+    }
+
+    .yoga-tour_section {
+        padding: 35px 0;
+    }
+
+    .yoga-tour_section .col img{
+        width: 250px;
+    }
+
+    .yoga-tour_section h2 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 18px;
+    }
+
+    .yoga-tour_section h2 span {
+        font-size: 25px;
+    }
+
+    .text-content {
+        margin-bottom: 23px;
+        font-size: 12px;
+    }
+
+    .text-content {
+        margin-bottom: 23px;
+        font-size: 12px;
+    }
+
+    .reasons-section {
+        padding: 55px 0 60px;
+    }
+
+    .reasons-section img{
+        width: 120px;
+    }
+
+    .text-reason {
+        width: 190px;
+        font-size: 14px;
+    }
+
+    .slide {
+        height: 240px;
+    }
+
+    .slide-text h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .slide-text p {
+        width: 315px;
+        font-size: 11px;
+    }
+
+    .tour-schedule_section .reason-line {
+        margin-bottom: 30px;
+    }
+
+    .ayurveda-text {
+        font-size: 14px;
+        margin-bottom: 45px;
+    }
+
+    .ayurveda .reason-line {
+        margin-bottom: 25px;
+    }
+
+    .ayurveda-program p {
+        font-size: 14px;
+        width: 425px;
+    }
+
+    .ayurveda-center_list {
+        flex-direction: column;
+    }
+
+    .ayurveda-center_list .col-2{
+        width: 100%;
+    }
+
+    .ayurveda-center_list ul li {
+        margin-bottom: 5px;
+    }
+
+    .instructor-skills {
+        font-size: 12px;
+    }
+
+    .instructor-info h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .instructor-info{
+        padding: 0;
+        border-right: none;
+    }
+
+    .single-item .row {
+        bottom: 14px;
+    }
+
+    .reviews .reason-line {
+        margin-bottom: 40px;
+    }
+
+    .why-we_section .reason-line {
+        margin-bottom: 40px;
+    }
+
+    .why-we_section .row{
+        justify-content: flex-start;
+    }
+
+    .why-we_section .col-padding{
+        padding: 0;
+    }
+
+    .why-we_section {
+        padding: 45px 0;
+    }
+
+    .step-plan:after {
+        right: -10px;
+    }
+
+    .why-we_section .text-holder p {
+        font-size: 14px;
+    }
+
+    .plan-job_section .step-plan p {
+        font-size: 10px;
+    }
+
+    .plan-job_section {
+        padding: 50px 0;
+    }
+
+    .price-section {
+        padding: 50px 0;
+    }
+
+    .price-tour p {
+        font-size: 13px;
+        line-height: 34px;
+    }
+
+    .price-tour {
+        padding: 26px;
+    }
+
+    .price-sale p {
+        font-size: 13px;
+    }
+
+    .price-sale button {
+        padding: 8px 36px;
+    }
+
+    .price-detailes ul {
+        font-size: 13px;
+    }
+
+    .price-detailes h3 {
+        font-size: 20px;
+        margin-bottom: 23px;
+    }
+
+    .price-detailes p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .security-guarantee_section p {
+        margin-bottom: 35px;
+        font-size: 13px;
+    }
+
+    .security-guarantee_section h3 {
+        font-size: 20px
+    }
+
+    .security-guarantee_section img {
+        width: 120px;
+    }
+
+    .security-guarantee_section span {
+        font-size: 11px;
+    }
+
+    .security-guarantee_section {
+        padding: 45px 0;
+    }
+
+    .contact-section h4 {
+        font-size: 14px;
+    }
+
+    .contact-section .phone-header a {
+        font-size: 20px;
+    }
+
+    .contact-section .social-header ul li a i {
+        font-size: 12px;
+    }
+
+    iframe{
+        width: 150px;
+    }
+
+    .maps span {
+        font-size: 9px;
+    }
+
+    .footer .col:last-child p {
+        width: 222px;
+    }
+
+    .logo-text a {
+        font-size: 14px;
+    }
+
+    .footer .logo-footer img {
+        width: 45px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 770px) {
+    .slide-text p {
+        width: 221px;
+    }
+
+    .instructors-section .single-item .slide .instructor-bg {
+        height: 100%;
+    }
+
+    .reviews .slide .row {
+     flex-wrap: wrap;
+     justify-content: center;
+    }
+
+    .reviews {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 545px) {
+    .logo img {
+        width: 40px;
+    }
+
+    .container-header h1 {
+        margin: 0 0 15px;
+        font-size: 25px;
+    }
+
+    .nav ul {
+        font-size: 11px;
+        margin: 0 0 8px;
+    }
+
+    .nav span {
+        font-size: 12px;
+        margin: 0 0 15px;
+    }
+
+    .phone-header span {
+        font-size: 10px;
+    }
+
+    .phone-header a {
+        font-size: 12px;
+    }
+
+    .btn-header {
+        font-size: 10px;
+        height: 30px;
+        width: 130px;
+        margin: 0 0 10px;
+    }
+
+    .social-header ul li a i {
+        font-size: 8px;
+    }
+
+    .container-header {
+        padding: 60px 0 0;
+    }
+
+    .yoga-tour_section .col img {
+        width: 200px;
+    }
+
+    .yoga-tour_section h2 span {
+        font-size: 20px;
+    }
+
+    .yoga-tour_section h2 {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+
+    .tour-consists_of li {
+        font-size: 14px;
+    }
+
+    .slide {
+        width: 325px;
+    }
+
+    .ayurveda-text {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    .ayurveda-text p:first-child {
+        margin-bottom: 15px;
+    }
+
+    .ayurveda h3 {
+        font-size: 18px;
+    }
+
+    .ayurveda-program p {
+        font-size: 13px;
+        width: 265px;
+    }
+
+    .ayurveda-center {
+        padding-top: 35px;
+    }
+
+    .ayurveda-center_bg {
+        display: none;
+    }
+
+    .ayurveda-center_photo{
+        background-color: #f8f2e4;
+    }
+    .ayurveda-center_photo img {
+        width: 105px;
+    }
+
+    .ayurveda-center{
+        justify-content: center;
+    }
+
+    .ayurveda-center .col-2{
+        width: auto;
+    }
+
+    .why-we_section .row {
+        justify-content: center;
+    }
+
+    .why-we_section .row .col {
+        margin-bottom: 25px;
+    }
+
+    .plan-job_section p {
+        font-size: 14px;
+        margin-bottom: 45px;
+    }
+
+    .plan-container{
+        flex-wrap: wrap;
+    }
+
+    .plan-job_section .step-plan p {
+        padding: 0 7px;
+    }
+
+    .step-plan {
+        margin-bottom: 15px;
+    }
+
+    .step-plan p{
+        margin-bottom: 0;
+    }
+
+    .plan-job_section {
+        padding: 30px 0;
+    }
+
+    .contact-section {
+        padding: 30px 0 35px;
+    }
+
+    .contact-section h3 {
+        margin-bottom: 20px;
+    }
+
+    .footer .row {
+        justify-content: center;
+    }
+
+    .footer .col:first-child{
+        margin-bottom: 15px;
+    }
+
+    .footer .logo-footer {
+        margin-right: 12px;
+    }
+
+    .security-guarantee_section span {
+        font-size: 11px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .container-header {
+        padding: 15px 0 0;
+    }
+
+    .container-header h1 {
+        margin: 0 0 5px;
+        font-size: 20px;
+    }
+
+    .nav ul {
+        font-size: 8px;
+        margin: 0 0 5px;
+    }
+
+    .nav span {
+        font-size: 10px;
+        margin: 0 0 10px;
+    }
+
+    .phone-header span {
+        font-size: 8px;
+        margin-bottom: 5px;
+    }
+
+    .social-header ul li a i {
+        padding: 3px;
+    }
+
+    .social-header ul li a .fa-facebook-f {
+        padding: 3px 5px;
+    }
+
+    .yoga-tour_section .row{
+        justify-content: center;
+    }
+
+    .yoga-tour_section .col-2{
+        width: auto;
+    }
+
+    .slide-text h3 {
+        font-size: 10px;
+    }
+
+    .slide-text p {
+        width: 150px;
+    }
+
+    .slide{
+        height: 200px;
+    }
+
+    .instructors-section {
+        padding: 30px 0;
+    }
+
+    .instructor-skills {
+        font-size: 10px;
+        width: 190px;
+    }
+
+    .single-item .row {
+        left: 25px;
+        bottom: 25px;
+    }
+
+    .price-section {
+        padding: 35px 0;
+    }
+
+    .price-tour {
+        padding: 10px;
+    }
+
+    .price-tour p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .price-content {
+        margin-bottom: 10px;
+    }
+
+    .price-content p:first-child{
+        padding-right: 20px;
+    }
+
+    .price-sale{
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding: 15px;
+    }
+
+    .price-sale p {
+        margin-bottom: 10px;
+    }
+
+    .price-sale button {
+        padding: 8px 30px;
+    }
+
+    .price-detailes ul {
+        font-size: 12px;
+    }
+
+    .price-detailes p {
+        font-size: 13px;
+    }
+
+    .not-included-in_price {
+        margin-bottom: 21px;
+    }
+
+    .security-guarantee_section span{
+        max-width: 110px;
+        width: 100%;
+    }
+
+    .security-guarantee_section p {
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+
+    .security-guarantee_section .reason-line {
+        margin-bottom: 20px;
+    }
+
+    .security-guarantee_section h3 {
+        font-size: 17px;
+    }
+
+    .contact-section {
+        padding: 30px 0 15px;
+    }
+
+    .contact-section .social-header {
+         margin-right: 45px;
+    }
+
+    .contact-section .phone-header a {
+        font-size: 18px;
+    }
+
+     .contact-section .social-header {
+        margin-bottom: 30px;
+    }
+
+    .contact-section .phone-header{
+        margin-bottom: 25px;
+    }
+
+    .maps .col{
+        padding: 0 10px;
+        margin-bottom: 15px;
+    }
+
+    .maps .col:first-child {
+        padding-left: 10px;
+    }
+
+
+}
